@@ -1,7 +1,9 @@
 language: python
 python:
-  - 3.5.2
-
-install: "sudo python setup.py install"
-
-script: true
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.5-dev"
+  - "3.6-dev" 
+install: "pip install -r requirements.txt"
+script: pytest views.py
