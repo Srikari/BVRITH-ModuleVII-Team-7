@@ -1,13 +1,7 @@
-language: php
-php:
-  - 5.5
-  - 5.4
-  - hhvm
-script: phpunit Test.php
+language: python
+python:
+  - 3.5.2
 
-env:
-  global:
-    - CI=true
-  matrix:
-    - TEST_DOC=false
-    - TEST_DOC=true
+install: "sudo python setup.py install"
+
+script: true
